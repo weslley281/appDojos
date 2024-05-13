@@ -16,7 +16,7 @@ function createWindow() {
 
   mainWindow.setMenu(null);
 
-  mainWindow.loadURL('http://localhost/Academia%20e%20Dojo/index.php'); // Substitua "https://seusite.com" pela URL do seu site/sistema web
+  mainWindow.loadURL('https://kenshydokan.com'); // Substitua "https://seusite.com" pela URL do seu site/sistema web
 
   mainWindow.on('closed', function () {
     mainWindow = null;
