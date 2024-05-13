@@ -1,0 +1,45 @@
+{
+  "name": "appdojos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "npx electron-builder --dir",
+    "dist": "npx electron-builder",
+    "dev": "npx electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron-builder": "^24.13.3",
+    "electron": "^30.0.3"
+  },
+  "build": {
+    "appId": "br.org.kenshydokan",
+    "productName": "KenshydokanAcademy",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "images/logo-kenshydokan.icns",
+      "category": "public.app-category.utilidades",
+      "target": "dmg"
+    },
+    "win": {
+      "icon": "images/logo-kenshydokan.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "images/logo-kenshydokan.png",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    }
+  }
+}
